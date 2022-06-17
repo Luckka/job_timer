@@ -9,7 +9,7 @@ class HeaderProjectsMenu extends SliverPersistentHeaderDelegate{
     return LayoutBuilder(
       builder: (context, constraints) {
         return Container(
-          padding: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           color: Colors.white,
           height: constraints.maxHeight,
           child: Row(
@@ -22,7 +22,7 @@ class HeaderProjectsMenu extends SliverPersistentHeaderDelegate{
                    onChanged: (value){},
                    decoration: InputDecoration(
                     border: OutlineInputBorder(borderRadius: BorderRadius.circular(20) ),
-                    contentPadding: EdgeInsets.all(10),
+                    contentPadding: const EdgeInsets.all(10),
                     isCollapsed: true
                    ),
                 )),
