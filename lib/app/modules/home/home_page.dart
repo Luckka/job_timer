@@ -34,7 +34,7 @@ class HomePage extends StatelessWidget {
                         BorderRadius.vertical(bottom: Radius.circular(15))),
               ),
               SliverPersistentHeader(
-                delegate: HeaderProjectsMenu(),
+                delegate: HeaderProjectsMenu(controller: controller),
                 pinned: true,
               ),
               BlocSelector<HomeController, HomeState, bool>(
